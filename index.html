@@ -6,26 +6,41 @@
     <title>NekSecurity | Cybersecurity & Enterprise Solutions</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #0f172a; color: #f8fafc; line-height: 1.6; }
-        header { background: #1e293b; padding: 2rem; text-align: center; border-bottom: 2px solid #334155; }
-        header h1 { color: #38bdf8; margin: 0 0 10px 0; }
+        
+        /* Νέο στυλ για το header - Πιο φωτεινό */
+        header { background: #f1f5f9; padding: 2rem; text-align: center; border-bottom: 2px solid #334155; color: #1e293b; }
+        header h1 { color: #0284c7; margin: 0 0 10px 0; }
+        header p { color: #334155; font-weight: bold; }
+        .logo-img { max-width: 120px; height: auto; margin-bottom: 15px; } /* Ρύθμιση μεγέθους λογοτύπου */
+
         .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
         .card { background: #1e293b; padding: 30px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         .card h2 { color: #38bdf8; margin-top: 0; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
+        
+        /* Pricing Grid */
         .pricing-grid { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
-        .price-box { background: #0f172a; border: 1px solid #334155; padding: 20px; border-radius: 6px; flex: 1; min-width: 250px; text-align: center; }
+        .price-box { background: #0f172a; border: 1px solid #334155; padding: 20px; border-radius: 6px; flex: 1; min-width: 250px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
         .price-box h3 { color: #38bdf8; margin-top: 0; }
         .price { font-size: 1.8rem; font-weight: bold; color: #f8fafc; margin: 15px 0; }
+        .btn-buy { background: #10b981; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 15px; transition: background 0.3s; }
+        .btn-buy:hover { background: #059669; }
+        
+        /* CTA Section */
         .cta { text-align: center; margin-top: 40px; }
         .btn { background: #0284c7; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; transition: background 0.3s; }
         .btn:hover { background: #0369a1; }
+        
         footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
+        <!-- Εισαγωγή του λογοτύπου -->
+        <img src="image_3.png" alt="NekSecurity Logo" class="logo-img">
+        
         <h1>NekSecurity</h1>
         <p>Professional Cybersecurity, Enterprise SIEM & WordPress Hardening</p>
     </header>
@@ -34,7 +49,6 @@
         <div class="card">
             <h2>Υπηρεσίες Ασφαλείας Ιστοσελίδων</h2>
             <ul>
-                <li><strong>WordPress Hardening & Malware Removal:</strong> Καθαρισμός μολυσμένων ιστοσελίδων, απομάκρυνση κακόβουλου λογισμικού (malware), κλείσιμο κενών ασφαλείας και θωράκιση από brute-force επιθέσεις.</li>
                 <li><strong>Email Authentication (SPF, DKIM, DMARC):</strong> Ρύθμιση πρωτοκόλλων ασφαλείας αλληλογραφίας για αποφυγή πλαστοπροσωπίας (spoofing) και εξασφάλιση παράδοσης στα Inboxes.</li>
             </ul>
         </div>
@@ -49,28 +63,50 @@
         </div>
 
         <div class="card">
-            <h2>Μηνιαία Πακέτα Συντήρησης & Ασφάλειας (WordPress)</h2>
-            <p>Εξασφαλίστε το website σας με τακτικούς ελέγχους και ενημερώσεις χωρίς άγχος.</p>
+            <h2>Πακέτα Υπηρεσιών & Συντήρησης WordPress</h2>
+            <p>Επιλέξτε το μηνιαίο πρόγραμμα προστασίας που σας ταιριάζει ή ζητήστε άμεσο καθαρισμό ιστοσελίδας.</p>
             
             <div class="pricing-grid">
+                <!-- Basic Plan -->
                 <div class="price-box">
-                    <h3>Basic Plan</h3>
-                    <div class="price">30€ <span style="font-size: 1rem; color: #94a3b8;">/ μήνα</span></div>
-                    <ul style="text-align: left; list-style-type: none; padding: 0;">
-                        <li>✓ 2 έλεγχοι τον μήνα</li>
-                        <li>✓ Updates (WordPress, Plugins, Themes)</li>
-                        <li>✓ Βασικός έλεγχος ασφαλείας</li>
-                    </ul>
+                    <div>
+                        <h3>Basic Plan</h3>
+                        <div class="price">30€ <span style="font-size: 1rem; color: #475569;">/ μήνα</span></div>
+                        <ul style="text-align: left; list-style-type: none; padding: 0; color: #94a3b8;">
+                            <li>✓ 2 έλεγχοι τον μήνα</li>
+                            <li>✓ Updates (WP, Plugins, Themes)</li>
+                            <li>✓ Βασικός έλεγχος ασφαλείας</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:karavasilisnektarios88@gmail.com?subject=Ενδιαφέρον%20για%20Basic%20Plan%20(30€)" class="btn-buy">Επιλογη Basic</a>
                 </div>
 
+                <!-- Pro Plan -->
                 <div class="price-box" style="border-color: #38bdf8;">
-                    <h3>Pro Plan</h3>
-                    <div class="price">50€ <span style="font-size: 1rem; color: #94a3b8;">/ μήνα</span></div>
-                    <ul style="text-align: left; list-style-type: none; padding: 0;">
-                        <li>✓ Έλεγχος & Updates 1 φορά την εβδομάδα</li>
-                        <li>✓ Άμεση επέμβαση σε περιστατικό</li>
-                        <li>✓ Προτεραιότητα υποστήριξης</li>
-                    </ul>
+                    <div>
+                        <h3>Pro Plan</h3>
+                        <div class="price">50€ <span style="font-size: 1rem; color: #475569;">/ μήνα</span></div>
+                        <ul style="text-align: left; list-style-type: none; padding: 0; color: #94a3b8;">
+                            <li>✓ Updates 1 φορά την εβδομάδα</li>
+                            <li>✓ Άμεση επέμβαση σε περιστατικό</li>
+                            <li>✓ Προτεραιότητα υποστήριξης</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:karavasilisnektarios88@gmail.com?subject=Ενδιαφέρον%20για%20Pro%20Plan%20(50€)" class="btn-buy" style="background: #0284c7;">Επιλογη Pro</a>
+                </div>
+
+                <!-- Malware Removal / Emergency -->
+                <div class="price-box" style="border-color: #ef4444;">
+                    <div>
+                        <h3 style="color: #dc2626;">Malware Removal</h3>
+                        <div class="price" style="font-size: 1.4rem; color: #ef4444;">Έκτακτη Υπηρεσία</div>
+                        <ul style="text-align: left; list-style-type: none; padding: 0; font-size: 0.95rem; color: #94a3b8;">
+                            <li>✓ Πλήρης καθαρισμός site</li>
+                            <li>✓ Απομάκρυνση κακόβουλου κώδικα</li>
+                            <li>✓ Θωράκιση από νέα μόλυνση</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:karavasilisnektarios88@gmail.com?subject=Επείγον:%20Αίτημα%20Καθαρισμού%20Malware" class="btn-buy" style="background: #dc2626;">Αιτημα Καθαρισμου</a>
                 </div>
             </div>
         </div>
@@ -81,7 +117,7 @@
         </div>
 
         <div class="cta">
-            <p>Ενδιαφέρεστε για υπηρεσίες ασφαλείας ή προσαρμοσμένη λύση δικτύου;</p>
+            <p>Χρειάζεστε προσαρμοσμένη λύση ασφαλείας ή δικτύου;</p>
             <a href="mailto:karavasilisnektarios88@gmail.com" class="btn">Επικοινωνήστε μαζί μου</a>
         </div>
     </div>
