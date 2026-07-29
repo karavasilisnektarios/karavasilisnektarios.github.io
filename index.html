@@ -7,10 +7,11 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #0f172a; color: #f8fafc; line-height: 1.6; }
         
-        header { background: #f1f5f9; padding: 2rem; text-align: center; border-bottom: 2px solid #334155; color: #1e293b; }
-        header h1 { color: #0284c7; margin: 0 0 10px 0; }
-        header p { color: #334155; font-weight: bold; }
-        .logo-img { max-width: 130px; height: auto; margin-bottom: 15px; }
+        /* Κάνουμε το header σκούρο ίδιο με τις κάρτες για να δένει το λογότυπο */
+        header { background: #1e293b; padding: 2.5rem 2rem; text-align: center; border-bottom: 2px solid #334155; color: #f8fafc; }
+        header h1 { color: #38bdf8; margin: 10px 0 5px 0; }
+        header p { color: #94a3b8; font-weight: bold; margin: 0; }
+        .logo-img { max-width: 140px; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 
         .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
         .card { background: #1e293b; padding: 30px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
@@ -37,9 +38,7 @@
 <body>
 
     <header>
-        <!-- Βεβαιώσου ότι έχεις ανεβάσει το αρχείο ως logo.png στο GitHub σου -->
         <img src="logo.png" alt="NekSecurity Logo" class="logo-img">
-        
         <h1>NekSecurity</h1>
         <p>Professional Cybersecurity, Enterprise SIEM & WordPress Hardening</p>
     </header>
@@ -71,7 +70,7 @@
                 <div class="price-box">
                     <div>
                         <h3>Basic Plan</h3>
-                        <div class="price">30€ <span style="font-size: 1rem; color: #475569;">/ μήνα</span></div>
+                        <div class="price">30€ <span style="font-size: 1rem; color: #94a3b8;">/ μήνα</span></div>
                         <ul style="text-align: left; list-style-type: none; padding: 0; color: #94a3b8;">
                             <li>✓ 2 έλεγχοι τον μήνα</li>
                             <li>✓ Updates (WP, Plugins, Themes)</li>
@@ -85,7 +84,7 @@
                 <div class="price-box" style="border-color: #38bdf8;">
                     <div>
                         <h3>Pro Plan</h3>
-                        <div class="price">50€ <span style="font-size: 1rem; color: #475569;">/ μήνα</span></div>
+                        <div class="price">50€ <span style="font-size: 1rem; color: #94a3b8;">/ μήνα</span></div>
                         <ul style="text-align: left; list-style-type: none; padding: 0; color: #94a3b8;">
                             <li>✓ Updates 1 φορά την εβδομάδα</li>
                             <li>✓ Άμεση επέμβαση σε περιστατικό</li>
@@ -98,8 +97,8 @@
                 <!-- Malware Removal / Emergency -->
                 <div class="price-box" style="border-color: #ef4444;">
                     <div>
-                        <h3 style="color: #dc2626;">Malware Removal</h3>
-                        <div class="price" style="font-size: 1.4rem; color: #ef4444;">Έκτακτη Υπηρεσία</div>
+                        <h3 style="color: #f87171;">Malware Removal</h3>
+                        <div class="price" style="font-size: 1.4rem; color: #f87171;">Έκτακτη Υπηρεσία</div>
                         <ul style="text-align: left; list-style-type: none; padding: 0; font-size: 0.95rem; color: #94a3b8;">
                             <li>✓ Πλήρης καθαρισμός site</li>
                             <li>✓ Απομάκρυνση κακόβουλου κώδικα</li>
