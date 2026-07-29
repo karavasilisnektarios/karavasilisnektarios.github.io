@@ -13,6 +13,10 @@
         .card h2 { color: #38bdf8; margin-top: 0; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
+        .pricing-grid { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+        .price-box { background: #0f172a; border: 1px solid #334155; padding: 20px; border-radius: 6px; flex: 1; min-width: 250px; text-align: center; }
+        .price-box h3 { color: #38bdf8; margin-top: 0; }
+        .price { font-size: 1.8rem; font-weight: bold; color: #f8fafc; margin: 15px 0; }
         .cta { text-align: center; margin-top: 40px; }
         .btn { background: #0284c7; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; transition: background 0.3s; }
         .btn:hover { background: #0369a1; }
@@ -23,17 +27,44 @@
 
     <header>
         <h1>NekSecurity</h1>
-        <p>Professional Cybersecurity, WordPress Hardening & Email Authentication Services</p>
+        <p>Professional Cybersecurity, WordPress Hardening & Malware Removal Services</p>
     </header>
 
     <div class="container">
         <div class="card">
             <h2>Υπηρεσίες Ασφαλείας</h2>
             <ul>
-                <li><strong>WordPress & WooCommerce Hardening:</strong> Θωράκιση ιστοσελίδων, κλείσιμο κενών ασφαλείας, προστασία από brute-force επιθέσεις και κακόβουλο λογισμικό.</li>
+                <li><strong>WordPress Hardening & Malware Removal:</strong> Καθαρισμός μολυσμένων ιστοσελίδων, απομάκρυνση κακόβουλου λογισμικού (malware), κλείσιμο κενών ασφαλείας και θωράκιση từ brute-force επιθέσεις.</li>
                 <li><strong>Email Authentication (SPF, DKIM, DMARC):</strong> Ρύθμιση πρωτοκόλλων ασφαλείας αλληλογραφίας για αποφυγή πλαστοπροσωπίας (spoofing) και εξασφάλιση παράδοσης στα Inboxes.</li>
                 <li><strong>Network Security & Audits:</strong> Έλεγχοι τρωτότητας και προστασία δικτυακών υποδομών για επιχειρήσεις και ιδιώτες.</li>
             </ul>
+        </div>
+
+        <div class="card">
+            <h2>Μηνιαία Πακέτα Συντήρησης & Ασφάλειας</h2>
+            <p>Εξασφαλίστε το website σας με τακτικούς ελέγχους και ενημερώσεις χωρίς άγχος.</p>
+            
+            <div class="pricing-grid">
+                <div class="price-box">
+                    <h3>Basic Plan</h3>
+                    <div class="price">30€ <span style="font-size: 1rem; color: #94a3b8;">/ μήνα</span></div>
+                    <ul style="text-align: left; list-style-type: none; padding: 0;">
+                        <li>✓ 2 έλεγχοι τον μήνα</li>
+                        <li>✓ Updates (WordPress, Plugins, Themes)</li>
+                        <li>✓ Βασικός έλεγχος ασφαλείας</li>
+                    </ul>
+                </div>
+
+                <div class="price-box" style="border-color: #38bdf8;">
+                    <h3>Pro Plan</h3>
+                    <div class="price">50€ <span style="font-size: 1rem; color: #94a3b8;">/ μήνα</span></div>
+                    <ul style="text-align: left; list-style-type: none; padding: 0;">
+                        <li>✓ Έλεγχος & Updates 1 φορά την εβδομάδα</li>
+                        <li>✓ Άμεση επέμβαση σε περιστατικό</li>
+                        <li>✓ Προτεραιότητα υποστήριξης</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="card">
@@ -42,7 +73,7 @@
         </div>
 
         <div class="cta">
-            <p>Χρειάζεστε έλεγχο ασφαλείας ή θωράκιση του site σας;</p>
+            <p>Επιλέξτε το πακέτο που σας ταιριάζει ή ζητήστε προσαρμοσμένη λύση:</p>
             <a href="mailto:karavasilisnektarios@gmail.com" class="btn">Επικοινωνήστε μαζί μου</a>
         </div>
     </div>
